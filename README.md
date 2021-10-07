@@ -14,6 +14,8 @@ This is a repository to manage my Kattis solutions. [Kattis](https://open.kattis
 Finished:
 
 In-progress:
+* A New Alphabet
+* Add 'Em Up!
 
 ## Setup
 In order to view and run the solution to a specific problem, navigate to the folder with that problem name.
