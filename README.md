@@ -20,5 +20,7 @@ In-progress:
 ## Setup
 In order to view and run the solution to a specific problem, navigate to the folder with that problem name.
 
+_* Note: Problems are subdivided into languagues._
+
 ## Contact
 Created by [@cameronmathis](https://github.com/cameronmathis/) - feel free to contact me!
