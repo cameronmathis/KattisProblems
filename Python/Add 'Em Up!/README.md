@@ -1,4 +1,4 @@
-# Add 'Em Up!
+# [Add 'Em Up!](https://open.kattis.com/problems/addemup)
 
 ## Table of contents
 
