@@ -50,6 +50,9 @@ _Sample Output 3:_ </br>
 @ \[\]\\\[\]3\\/\\/ @1|D\[-\]@83'\]\['! </br>
 
 ## Setup
+In order to run, clone this folder onto your local machine and run the command:
+
+	$ ./run.sh [input]
 
 ## Difficulty
 2.1
