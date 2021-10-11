@@ -18,7 +18,7 @@ The new alphabet is a one-to-many translation (one character of the English alph
 
 | Original | New | Original | New | Original | New    | Original | New   | Original | New |
 | -------- | --- | -------- | --- | -------- | ------ | -------- | ----- | -------- | --- |
-| a        | @   | g        | 6   | m        | []\/[] | s        | $     | y        | '/  | 
+| a        | @   | g        | 6   | m        | []\/[] | s        | $     | y        | \`/ | 
 | b        | 8   | h        | [-] | n        | []\[]  | t        | ']\[' | z        | 2   | 
 | c        | (   | i        | \|  | o        | 0      | u        | \|_\| | 
 | d        | \|) | j        | _\| | p        | \|D    | v        | \/    | 

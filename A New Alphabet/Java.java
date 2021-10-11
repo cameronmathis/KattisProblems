@@ -1,6 +1,6 @@
 /*
 Rating: ~ 2.6 / 10
-Link: https://open.kattis.com/problems/busnumbers
+Link: https://open.kattis.com/problems/anewalphabet
 Complexity: O(N) where N is the length of the string
 */
 
