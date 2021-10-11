@@ -1,15 +1,15 @@
 /*
-Rating: ~ 2.1 / 10
+Rating: ~ 2.6 / 10
 Link: https://open.kattis.com/problems/busnumbers
+Complexity: O(N) where N is the length of the string
 */
 
 import java.util.Scanner;
 import java.util.HashMap;
 
 public class Main {
-    // Driver code to show sorting algorithm speed
     public static void main(String args[]) {
-        // store input
+        // read & store input
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
@@ -42,7 +42,7 @@ public class Main {
         alphabetMap.put('v', "\\/");
         alphabetMap.put('w', "\\/\\/");
         alphabetMap.put('x', "}{");
-        alphabetMap.put('y', "'/");
+        alphabetMap.put('y', "`/");
         alphabetMap.put('z', "2");
 
         // convert to new alphabet
