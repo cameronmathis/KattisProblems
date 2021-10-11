@@ -34,7 +34,7 @@ YES </br>
 ## Setup
 In order to run, clone this folder onto your local machine and run the command:
 
-	$ ./run.sh [input]
+	$ ./run.sh
 
 ## Difficulty
 4.8

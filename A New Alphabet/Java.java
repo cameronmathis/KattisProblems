@@ -7,7 +7,7 @@ Complexity: O(N) where N is the length of the string
 import java.util.Scanner;
 import java.util.HashMap;
 
-public class Main {
+public class Java {
     public static void main(String args[]) {
         // read & store input
         Scanner scanner = new Scanner(System.in);
