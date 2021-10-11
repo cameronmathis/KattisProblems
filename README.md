@@ -14,7 +14,7 @@ This is a repository to manage my Kattis solutions. [Kattis](https://open.kattis
 Finished:
 | Problem | Difficulty | Status | Languages | :link: |
 | - | - | - | - | - |
-| [Add 'Em Up](https://github.com/cameronmathis/KattisProblems/tree/main/Python/Add%20'Em%20Up!) | 4.8 | In Progress | Java | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/addemup) |
+| [Add 'Em Up](https://github.com/cameronmathis/KattisProblems/tree/main/Python/Add%20'Em%20Up!) | 4.8 | In Progress | Python | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/addemup) |
 | [A New Alphabet](https://github.com/cameronmathis/KattisProblems/tree/main/Java/A%20New%20Alphabet) | 2.1 | In Progress | Java | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/anewalphabet) |
 
 ## Setup
