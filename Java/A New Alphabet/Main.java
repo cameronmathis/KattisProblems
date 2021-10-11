@@ -1,10 +1,18 @@
+/*
+Rating: ~ 2.1 / 10
+Link: https://open.kattis.com/problems/busnumbers
+*/
+
+import java.util.Scanner;
 import java.util.HashMap;
 
 public class Main {
     // Driver code to show sorting algorithm speed
     public static void main(String args[]) {
         // store input
-        String input = args[0].toLowerCase();
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        scanner.close();
         // convert input to lowercase
         input = input.toLowerCase();
 
