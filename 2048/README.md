@@ -1,4 +1,4 @@
-# [2048](https://open.kattis.com/problems/addemup)
+# [2048](https://open.kattis.com/problems/2048)
 
 ## Table of contents
 
