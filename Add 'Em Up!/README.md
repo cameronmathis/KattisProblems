@@ -1,4 +1,4 @@
-# [Add 'Em Up!](https://open.kattis.com/problems/addemup)
+# [Add 'Em Up!](https://open.kattis.com/problems/addemup) - _In Progress_
 
 ## Table of contents
 
