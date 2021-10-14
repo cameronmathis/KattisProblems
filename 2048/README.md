@@ -1,4 +1,4 @@
-# [2048](https://open.kattis.com/problems/2048)
+# [2048](https://open.kattis.com/problems/2048) - _Not Started_
 
 ## Table of contents
 
