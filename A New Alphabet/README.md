@@ -1,4 +1,4 @@
-# [A New Alphabet](https://open.kattis.com/problems/anewalphabet)
+# [A New Alphabet](https://open.kattis.com/problems/anewalphabet) - _Completed_
 
 ## Table of contents
 
