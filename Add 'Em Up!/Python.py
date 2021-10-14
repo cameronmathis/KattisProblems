@@ -1,63 +1,70 @@
 # Rating: ~ 4.8 / 10
 # Link: https://open.kattis.com/problems/addemup
-# Complexity: O(N^2) where N is the number of cards
+# Complexity: O(N) where N is the number of cards
 
-def isCardFlippable(card):
-    for digit in card:
-        if (int(digit) == 3 or int(digit) == 4 or int(digit) == 7):
+# check if a card is flipable
+# @param: int
+# @return: boolean
+def isCardFlipable(card):
+    for digit in str(card):
+        if (digit == "3" or digit == "4" or digit == "7"):
             return False
 
     return True
 
 
+# flip the given card
+# @param: int
+# @return: string
 def flipCard(card):
-    result = ""
-    for digit in card:
-        flipMap = {"1": "1",
-                   "2": "2", "5": "5", "6": "9", "8": "8", "9": "6", "0": "0"}
-        result += (flipMap[digit])
-    return result[::-1]
+    resultCard = ""
+    flipMap = {"1": "1",
+               "2": "2", "5": "5", "6": "9", "8": "8", "9": "6", "0": "0"}
+    for digit in str(card):
+        resultCard += flipMap[digit]
+    return resultCard[::-1]
 
 
+# create a card array containing all flipped values
+# @param: int array
+# @return: int array
+def getCardArrayWithFlips(cardArray):
+    resultArray = []
+    for card in cardArray:
+        nonflippedCard = card
+        resultArray.append(nonflippedCard)
+        if (isCardFlipable(card)):
+            flippedCard = int(flipCard(card))
+            resultArray.append(flippedCard)
+    return resultArray
+
+
+# create a card hashmap/dictionary
+# @param: int array
+# @return: int dictionary
+def getCardMap(cardArray):
+    resultMap = {}
+    for card in cardArray:
+        resultMap[card] = card
+    return resultMap
+
+
+# main method to solve the problem
 def main():
     # read & store input
-    inputString = input("")
-    numberOfCards = int(inputString.split()[0])
-    desiredSum = int(inputString.split()[1])
-    inputString = input("")
-    cardsArray = inputString.split()
+    desiredSum = int(input("").split()[1])
+    cardArrayWithoutFlips = [int(number) for number in input("").split()]
+    cardArrayWithFlips = getCardArrayWithFlips(cardArrayWithoutFlips)
+    cardMap = getCardMap(cardArrayWithFlips)
 
-    comparisons = 0
-    for xCard in range(numberOfCards):
-        for yCard in range(xCard + 1, numberOfCards):
-            comparisons += 1
-            print(comparisons)
-            # check if actual sum is desired sum with no cards flipped
-            actualSum = int(cardsArray[xCard]) + int(cardsArray[yCard])
-            if actualSum == desiredSum:
+    # check if you can "Add 'Em Up!"
+    for card in cardArrayWithFlips:
+        desiredCard = desiredSum - card
+        if desiredCard in cardMap:
+            if not isCardFlipable(desiredCard):
                 return "YES"
-            # check if the x card is flippable
-            if (isCardFlippable(cardsArray[xCard])):
-                # check if actual sum is desired sum with the x card flipped
-                actualSum = int(
-                    flipCard(cardsArray[xCard])) + int(cardsArray[yCard])
-                if actualSum == desiredSum:
-                    return "YES"
-            # check if the y card is flippable
-            if (isCardFlippable(cardsArray[yCard])):
-                # check if actual sum is desired sum with the y card flipped
-                actualSum = int(
-                    cardsArray[xCard]) + int(flipCard(cardsArray[yCard]))
-                if actualSum == desiredSum:
-                    return "YES"
-            # check if the x card and y card are flippable
-            if (isCardFlippable(cardsArray[xCard]) and isCardFlippable(cardsArray[yCard])):
-                # check if actual sum is desired sum with the x card and y card flipped
-                actualSum = int(
-                    flipCard(cardsArray[xCard])) + int(flipCard(cardsArray[yCard]))
-                if actualSum == desiredSum:
-                    return "YES"
-
+            elif not int(flipCard(desiredCard)) == card:
+                return "YES"
     return "NO"
 
 
