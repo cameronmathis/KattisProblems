@@ -61,9 +61,9 @@ def main():
     for card in cardArrayWithFlips:
         desiredCard = desiredSum - card
         if desiredCard in cardMap:
-            if not isCardFlipable(desiredCard):
+            if not (isCardFlipable(desiredCard)):
                 return "YES"
-            elif not int(flipCard(desiredCard)) == card:
+            elif not (int(flipCard(desiredCard)) == card):
                 return "YES"
     return "NO"
 
