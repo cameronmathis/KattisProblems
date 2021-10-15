@@ -2,6 +2,14 @@
 # Link: https://open.kattis.com/problems/addemup
 # Complexity: O(N) where N is the number of cards
 
+
+# card object to store a card's number and id
+class cardObject:
+    def __init__(self, number, id):
+        self.number = number
+        self.id = id
+
+
 # check if a card is flipable
 # @param: int
 # @return: boolean
@@ -26,26 +34,28 @@ def flipCard(card):
 
 
 # create a card array containing all flipped values
-# @param: int array
-# @return: int array
-def getCardArrayWithFlips(cardArray):
+# @param: cardObject array
+# @return: cardObject array
+def getCardObjectArrayWithFlips(cardArray):
     resultArray = []
+    id = 0
     for card in cardArray:
-        nonflippedCard = card
-        resultArray.append(nonflippedCard)
+        nonFlippedCard = card
+        resultArray.append(cardObject(nonFlippedCard, id))
         if (isCardFlipable(card)):
             flippedCard = int(flipCard(card))
-            resultArray.append(flippedCard)
+            resultArray.append(cardObject(flippedCard, id))
+        id += 1
     return resultArray
 
 
 # create a card hashmap/dictionary
-# @param: int array
+# @param: cardObject array
 # @return: int dictionary
-def getCardMap(cardArray):
+def getCardMap(cardObjectArray):
     resultMap = {}
-    for card in cardArray:
-        resultMap[card] = card
+    for cardObj in cardObjectArray:
+        resultMap[cardObj.number] = cardObj.id
     return resultMap
 
 
@@ -54,20 +64,20 @@ def main():
     # read & store input
     desiredSum = int(input("").split()[1])
     cardArrayWithoutFlips = [int(number) for number in input("").split()]
-    cardArrayWithFlips = getCardArrayWithFlips(cardArrayWithoutFlips)
-    cardMap = getCardMap(cardArrayWithFlips)
+    cardObjectArrayWithFlips = getCardObjectArrayWithFlips(
+        cardArrayWithoutFlips)
+    cardMap = getCardMap(cardObjectArrayWithFlips)
 
     # check if you can "Add 'Em Up!"
-    for card in cardArrayWithFlips:
-        desiredCard = desiredSum - card
+    for cardObj in cardObjectArrayWithFlips:
+        desiredCard = desiredSum - cardObj.number
         if desiredCard in cardMap:
-            if not (isCardFlipable(desiredCard)):
-                return "YES"
-            elif not (int(flipCard(desiredCard)) == card):
+            if not (cardMap[desiredCard] == cardObj.id):
                 return "YES"
     return "NO"
 
 
+# call the main method
 if __name__ == "__main__":
     result = main()
     print(result)
