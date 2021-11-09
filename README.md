@@ -13,11 +13,11 @@ This is a repository to manage my [Kattis](https://open.kattis.com/) solutions.
 This is a repository to manage my Kattis solutions. [Kattis](https://open.kattis.com/) is a problem archive where you can find hundreds of programming problems to solve.
 
 ## Problems
-| Problem | Difficulty | Status | Language | :link: |
-| - | - | - | - | - |
-| [2048](https://github.com/cameronmathis/KattisProblems/tree/main/2048) | 2.8 | Not Started | Python | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/2048) |
-| [A New Alphabet](https://github.com/cameronmathis/KattisProblems/tree/main/A%20New%20Alphabet) | 2.1 | Completed | Java | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/anewalphabet) |
-| [Add 'Em Up](https://github.com/cameronmathis/KattisProblems/tree/main/Add%20'Em%20Up!) | 4.8 | Completed | Python | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/addemup) |
+| Problem | Link | Status | Language |
+| - | - | - | - |
+| [2048](https://github.com/cameronmathis/KattisProblems/tree/main/2048) | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/2048) | Not Started | Python |
+| [A New Alphabet](https://github.com/cameronmathis/KattisProblems/tree/main/A%20New%20Alphabet) | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/anewalphabet) | Completed | Java |
+| [Add 'Em Up](https://github.com/cameronmathis/KattisProblems/tree/main/Add%20'Em%20Up!) | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/addemup) | Completed | Python |
 
 ## Language details
 Java Version: 16.0.1 </br>
