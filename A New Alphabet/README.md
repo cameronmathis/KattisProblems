@@ -55,4 +55,4 @@ In order to run, clone this folder onto your local machine and run the command:
 	$ ./run.sh
 
 ## Difficulty
-2.1
+~ 2.1 / 10
